@@ -1,0 +1,52 @@
+Hosting environment: Development
+Content root path: C:\Users\Roberto\Documents\Visual Studio 2017\Projects\TestWorkerProcess\TestWorkerProcess.Ws
+Now listening on: http://localhost:5000
+Application started. Press Ctrl+C to shut down.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/api/values  
+fail: Microsoft.AspNetCore.Mvc.Internal.ActionSelector[1]
+      Request matched multiple actions resulting in ambiguity. Matching actions: TestWorkerProcess.Ws.Controllers.ValuesController.BusyWait (TestWorkerProcess.Ws)
+      TestWorkerProcess.Ws.Controllers.ValuesController.BusyWait2 (TestWorkerProcess.Ws)
+ERROR Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+TestWorkerProcess.Ws.Controllers.ValuesController.BusyWait (TestWorkerProcess.Ws)
+TestWorkerProcess.Ws.Controllers.ValuesController.BusyWait2 (TestWorkerProcess.Ws)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.RouteCollection.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at TestWorkerProcess.Ws.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in C:\Users\Roberto\Documents\Visual Studio 2017\Projects\TestWorkerProcess\TestWorkerProcess.Ws\Startup.cs:line 69
+Success
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 331.4745ms 200 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/api/values/get/1  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "Values"}. Executing action TestWorkerProcess.Ws.Controllers.ValuesController.Get (TestWorkerProcess.Ws)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method TestWorkerProcess.Ws.Controllers.ValuesController.Get (TestWorkerProcess.Ws) with arguments (1) - Validation state: Valid
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/api/values/get/1  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "Get", controller = "Values"}. Executing action TestWorkerProcess.Ws.Controllers.ValuesController.Get (TestWorkerProcess.Ws)
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method TestWorkerProcess.Ws.Controllers.ValuesController.Get (TestWorkerProcess.Ws) with arguments (1) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method TestWorkerProcess.Ws.Controllers.ValuesController.Get (TestWorkerProcess.Ws), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 10005.3661ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int64, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action TestWorkerProcess.Ws.Controllers.ValuesController.Get (TestWorkerProcess.Ws) in 10059.6539ms
+Success
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 10125.7949ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method TestWorkerProcess.Ws.Controllers.ValuesController.Get (TestWorkerProcess.Ws), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 10000.4601ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int64, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action TestWorkerProcess.Ws.Controllers.ValuesController.Get (TestWorkerProcess.Ws) in 10008.1414ms
+Success
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 10015.4269ms 200 application/json; charset=utf-8
